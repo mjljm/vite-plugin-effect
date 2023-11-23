@@ -1,0 +1,15 @@
+{
+	"extends": ["@mjljm/configs/tsconfig-node.json"],
+	"compilerOptions": {
+		// This path definition allows auto-import in VSCode with
+		// "typescript.preferences.importModuleSpecifier": "non-relative",
+		"paths": {
+			"#mjljm/vite-plugin-effect/*": ["./src/*.ts"]
+		},
+		"plugins": [
+			{
+			   "name": "@effect/language-service"
+			}]
+	},
+	"include": ["src", ".*", "*"]
+}
