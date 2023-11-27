@@ -1,1 +1,1 @@
-{ "projectType": "nodeApp", "projectLibrary": "node" }
+{ "type": "nodeApp", "library": "node", "version": "1.0" }
