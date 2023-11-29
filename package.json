@@ -1,0 +1,55 @@
+{
+    "name": "@mjljm/vite-plugin-effect",
+    "version": "1.0",
+    "type": "module",
+    "main": "./src/main.ts",
+	"module": "./src/main.ts",
+	"exports": "./src/main.ts",
+	"imports": {
+		"#mjljm/vite-plugin-effect/*": {
+			"import": "./src/*.ts"
+		}
+	},
+    "packageManager": "pnpm@8.10.2",
+    "publishConfig": {
+      "access": "restricted",
+      "directory": "dist"
+    },
+    "author": "Jérôme MARTIN",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/mjljm/vite-plugin-effect"
+    },
+    "bugs": {
+      "url": "https://github.com/mjljm/vite-plugin-effect/issues"
+    },
+    "homepage": "https://github.com/mjljm/vite-plugin-effect",
+    "description": "",
+    "tags": [
+      "effect",
+      "typescript",
+      "algebraic-data-types",
+      "functional-programming"
+    ],
+    "keywords": [
+      "effect",
+      "typescript",
+      "algebraic-data-types",
+      "functional-programming"
+    ],
+    "scripts": {
+      "build":"vite build --ssr src/main.ts","dev":"cross-env DEBUG=true vite-node src/main.ts","circular":"madge --extensions ts --circular --no-color --no-spinner packages/*/src","check":"tsc -b tsconfig.json","lint":"eslint \"packages/*/{src,test,examples}/**/*.ts\"","lint-fix":"pnpm lint --fix"
+    },
+    "devDependencies": {
+      "@effect/language-service":"*","eslint":"*","eslint-config-prettier":"*","@html-eslint/eslint-plugin":"*","@html-eslint/parser":"*","@typescript-eslint/eslint-plugin":"*","@typescript-eslint/parser":"*","eslint-import-resolver-typescript":"*","eslint-plugin-codegen":"*","eslint-plugin-deprecation":"*","eslint-plugin-import":"*","eslint-plugin-markdown":"*","eslint-plugin-yml":"*","@types/eslint":"*","@types/eslint-config-prettier":"*","@types/eslint__js":"*","prettier":"*","cross-env":"*","fast-check":"*","madge":"*","npm-check-updates":"*","terser":"*","typescript":"*","vite":"*","vite-node":"*","vitest":"*","@types/node":"*","@mjljm/configs":"workspace:*"
+    },
+    "dependencies": {
+    },
+    "peerDependencies": {
+    },
+    "pnpm": {
+      "patchedDependencies": {
+      }
+    }
+  }
