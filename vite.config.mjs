@@ -12,8 +12,8 @@ export default defineConfig({
 			name: 'Configs',
 			entry: './src/index.ts',
 			formats: ['umd'],
-			fileName: 'index'
-			//fileName: (_, entry) => `${entry}.cjs`
+			filename: 'index'
+			//filename: (_, entry) => `${entry}.cjs`
 		},
 		outDir: './dist',
 		modulePreload: { polyfill: false },
