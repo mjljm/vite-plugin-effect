@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 
 export default defineConfig({
-	root: join(__dirname),
+	root: join(__dirpath),
 	publicDir: './www/public',
 	plugins: [dts({ include: ['./src/index.ts'] })],
 	build: {
@@ -39,7 +39,7 @@ export default defineConfig({
 	},
 	resolve: {
 		alias: {
-			'@mjljm/configs': join(__dirname, './src')
+			'@mjljm/configs': join(__dirpath, './src')
 		}
 	}
 });
