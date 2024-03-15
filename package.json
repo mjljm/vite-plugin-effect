@@ -1,77 +1,49 @@
 {
-  "name": "@mjljm/vite-plugin-effect",
-  "version": "1.0.0",
-  "type": "module",
-  "main": "./src/main.ts",
-  "module": "./src/main.ts",
-  "exports": "./src/main.ts",
-  "imports": {
-    "#mjljm/vite-plugin-effect/*": {
-      "import": "./src/*.ts"
-    }
-  },
-  "packageManager": "pnpm@8.11.0",
-  "author": "Jérôme MARTIN",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mjljm/vite-plugin-effect"
-  },
-  "bugs": {
-    "url": "https://github.com/mjljm/vite-plugin-effect/issues"
-  },
-  "homepage": "https://github.com/mjljm/vite-plugin-effect",
-  "description": "",
-  "tags": [
-    "effect",
-    "typescript",
-    "algebraic-data-types",
-    "functional-programming"
-  ],
-  "keywords": [
-    "effect",
-    "typescript",
-    "algebraic-data-types",
-    "functional-programming"
-  ],
-  "scripts": {
-    "build": "vite build --ssr src/main.ts",
-    "dev": "cross-env DEBUG=true vite-node src/main.ts",
-    "circular": "madge --extensions ts --circular --no-color --no-spinner packages/*/src",
-    "check": "tsc -b tsconfig.json",
-    "lint": "eslint \"packages/*/{src,test,examples}/**/*.ts\"",
-    "lint-fix": "pnpm lint --fix",
-    "clean-pnpm-cache": "rimraf node_modules"
-  },
-  "devDependencies": {
-    "@effect/language-service": "^0.1.0",
-    "@html-eslint/eslint-plugin": "^0.23.1",
-    "@html-eslint/parser": "^0.23.0",
-    "@mjljm/configs": "workspace:*",
-    "@types/eslint": "^8.56.5",
-    "@types/eslint-config-prettier": "^6.11.3",
-    "@types/eslint__js": "^8.42.3",
-    "@types/node": "^20.11.27",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.2.0",
-    "cross-env": "^7.0.3",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-codegen": "^0.26.0",
-    "eslint-plugin-deprecation": "^2.0.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-markdown": "^4.0.1",
-    "eslint-plugin-yml": "^1.12.2",
-    "fast-check": "^3.16.0",
-    "madge": "^6.1.0",
-    "npm-check-updates": "^16.14.15",
-    "prettier": "^3.2.5",
-    "rimraf": "^5.0.5",
-    "terser": "^5.29.1",
-    "typescript": "^5.4.2",
-    "vite": "^5.1.6",
-    "vite-node": "^1.3.1",
-    "vitest": "^1.3.1"
-  }
+	"name": "@mjljm/vite-plugin-effect",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "./src/main.ts",
+	"module": "./src/main.ts",
+	"exports": "./src/main.ts",
+	"imports": {
+		"#mjljm/vite-plugin-effect/*": {
+			"import": "./src/*.ts"
+		}
+	},
+	"packageManager": "pnpm@8.11.0",
+	"author": "Jérôme MARTIN",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mjljm/vite-plugin-effect"
+	},
+	"bugs": {
+		"url": "https://github.com/mjljm/vite-plugin-effect/issues"
+	},
+	"homepage": "https://github.com/mjljm/vite-plugin-effect",
+	"description": "",
+	"tags": [
+		"effect",
+		"typescript",
+		"algebraic-data-types",
+		"functional-programming"
+	],
+	"keywords": [
+		"effect",
+		"typescript",
+		"algebraic-data-types",
+		"functional-programming"
+	],
+	"scripts": {
+		"build": "vite build --ssr src/main.ts",
+		"dev": "cross-env DEBUG=true vite-node src/main.ts",
+		"circular": "madge --extensions ts --circular --no-color --no-spinner packages/*/src",
+		"check": "tsc -b tsconfig.json",
+		"lint": "eslint \"packages/*/{src,test,examples}/**/*.ts\"",
+		"lint-fix": "pnpm lint --fix",
+		"clean-pnpm-cache": "rimraf node_modules"
+	},
+	"devDependencies": {
+		"@types/node": "^20.11.28"
+	}
 }
