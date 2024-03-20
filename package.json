@@ -44,6 +44,6 @@
 		"clean-pnpm-cache": "rimraf node_modules"
 	},
 	"devDependencies": {
-		"@types/node": "^20.11.28"
+		"@types/node": "^20.11.30"
 	}
 }
